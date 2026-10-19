@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОЛКА — библиотека новелл</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,900&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div id="atmosphereLayer" aria-hidden="true"></div>
+<div id="app">
+  <header class="app-header">
+    <div class="brand" data-action="go-library" tabindex="0" role="button" aria-label="На полку">
+      <span class="brand-mark">ПОЛКА</span>
+      <span class="brand-sub">личная библиотека новелл</span>
+    </div>
+    <div class="header-spacer"></div>
+    <div class="search-box" id="searchBoxWrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Поиск по названию, автору, тегам…" autocomplete="off">
+    </div>
+    <button class="btn btn-primary" data-action="open-add-title">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      <span>Добавить произведение</span>
+    </button>
+  </header>
+  <main id="main"></main>
+  <footer class="app-footer">ПОЛКА · данные хранятся в вашем браузере</footer>
+</div>
+<div id="modalRoot"></div>
+<div class="toast-container" id="toastRoot"></div>
+
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
